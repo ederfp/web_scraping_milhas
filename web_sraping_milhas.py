@@ -20,4 +20,9 @@ link_list = [i4['href'] for i4 in link]
 
 print('Promoções Smiles \n')
 for i, promo in enumerate(title1_list):
-    print(f'{title1_list[i]} - {title2_list[i]} \n{desc_list[i]} \nLink: {link_list[i]}\n')
+    # print(title1_list)
+    try:
+        print(
+            f'{title1_list[i]} - {title2_list[i]} \n{desc_list[i]} \nLink: {link_list[i]}\n')
+    except:
+        continue
